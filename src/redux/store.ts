@@ -1,10 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
-import createSagaMiddleware from '@redux-saga/core'
+
 import themeReducer from '../features/Theme/themeSlice'
 import { postsReducer } from '../features/posts'
 import { authReducer } from '../features/auth'
 
 import { singUpSaga } from '../sagas/singUpSagas'
+import createSagaMiddleware from 'redux-saga'
 
 const sagaMiddleware = createSagaMiddleware()
 
